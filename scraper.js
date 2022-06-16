@@ -15,6 +15,7 @@ async function getInfo() {
     await page.type('#password', 'Ashton');
     await page.click('#app > div > div > div.cardSection__UNNlC > section:nth-child(1) > button')
     console.log("Reached App")
+    await page.waitForTimeout(10000);
     await page.screenshot({path: 'screenshots/final1.png'});
     await browser.close();
     };
